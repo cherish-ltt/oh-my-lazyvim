@@ -1,0 +1,13 @@
+return {
+  "catppuccin/nvim",
+  lazy = false,          -- ¹¿ü£º½ûÓÃÀ|ÓÔ¿¬Æô¶¯¿b¼´¼ÓÔØ
+  priority = 1000,       -- ¸ßÓÅÏ¿¶£¬¿±£ÔÚÆäËû²å¼ş¿¼ÓÔØ
+  opts = {
+    flavour = "latte",   -- ÉèÖÃ Latte ·ç¿
+    -- ÆäËû¿Ï¿ĞèÌí¼¿¨¿É¿Â¿©
+  },
+  config = function(_, opts)
+    require("catppuccin").setup(opts)
+    vim.cmd.colorscheme("catppuccin-nvim")
+  end,
+}

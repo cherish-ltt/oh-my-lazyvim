@@ -1,0 +1,16 @@
+return {
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = "false",
+    priority = 1000,
+    opts = {
+      flavour = "latte", -- 设置为 Latte 风味
+      -- 其他选项按需调整（参考文档）
+    },
+    config = function(_, opts)
+      require("catppuccin").setup(opts)
+      vim.cmd.colorscheme("catppuccin-nvim") -- 应用主题
+    end,
+  },
+}
