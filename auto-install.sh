@@ -23,7 +23,7 @@ mv ~/.cache/nvim ~/.cache/nvim.bak 2>/dev/null || true
 
 # 4. Clone LazyVim starter template
 echo "Cloning LazyVim template..."
-git clone https://github.com/LazyVim/starter ~/.config/nvim
+git clone https://github.com/cherish-ltt/oh-my-lazyvim ~/.config/nvim
 
 # 5. Remove .git directory (for customisation)
 echo "Removing .git directory..."
